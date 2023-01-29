@@ -1,0 +1,425 @@
+article,aside,details,figcaption,figure,footer,hgroup,main,menu,nav,section,summary {
+    display: block
+}
+
+audio,canvas,progress,video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+.btn,img {
+    vertical-align: middle
+}
+
+html {
+    font-size: 10px
+}
+
+body {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+a:active,a:hover {
+    outline: 0
+}
+
+img {
+    border: 0
+}
+
+body,html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+video {
+    display: inline-block
+}
+
+img {
+    border-style: none
+}
+
+input {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+body,html {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    background-color: #fff
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    vertical-align: top
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    background-color: #aaa
+}
+
+body {
+    font-family: -apple-system,Roboto,Helvetica Neue,Trebuchet MS,sans-serif;
+    font-size: 1em
+}
+
+a,img {
+    border: 0;
+    outline: 0
+}
+
+.visible {
+    opacity: 1
+}
+
+*,:after,:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    font-size: 2rem
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.player {
+    margin-top: 50px;
+    position: relative
+}
+
+@media (max-height: 650px) {
+    .player {
+        margin-top:0
+    }
+}
+
+.native {
+    position: relative;
+    text-align: center;
+    background: #000;
+    font-size: 0
+}
+
+.native video {
+    width: 100%
+}
+
+@media screen and (min-width: 1000px) {
+    .native video {
+        width:800px;
+        height: 400px
+    }
+}
+
+@media (max-height: 580px) {
+    .native video {
+        max-height:350px
+    }
+}
+
+@media (max-height: 525px) {
+    .native video {
+        max-height:300px
+    }
+}
+
+.native .overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 999
+}
+
+.allow {
+    -webkit-animation-duration: .25s;
+    animation-duration: .25s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: .75s;
+    animation-delay: .75s;
+    background-color: hsla(0,0%,100%,.9);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 40px auto 0;
+    clear: both;
+    min-height: 80px;
+    max-width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+@media (max-height: 600px) {
+    .allow {
+        margin-top:30px
+    }
+}
+
+@media (max-height: 580px) {
+    .allow {
+        margin-top:20px
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .allow {
+        max-width:70%
+    }
+}
+
+.allow img {
+    float: left;
+    margin-right: 20px
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+main {
+    padding-top: 70px
+}
+
+@media (max-width: 991px) {
+    main {
+        padding-top:0
+    }
+
+    .player {
+        margin-top: 0
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height:500px) {
+
+    main {
+        padding-top: 0
+    }
+}
+
+.loader {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    font-size: 0;
+    opacity: 0;
+    -webkit-animation: loaderShow 2s ease 1s 1 normal forwards;
+    animation: loaderShow 2s ease 1s 1 normal forwards;
+    -webkit-transform: translate(-51%,-67%) scale(1.55)
+}
+
+@-webkit-keyframes loaderShow {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes loaderShow {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 58px;
+    height: 58px
+}
+
+.lds-ring div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 4px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    -webkit-animation: lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;
+    animation: lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;
+    border-color: #fff transparent transparent
+}
+
+.lds-ring div:first-child {
+    -webkit-animation-delay: -.45s;
+    animation-delay: -.45s
+}
+
+.lds-ring div:nth-child(2) {
+    -webkit-animation-delay: -.3s;
+    animation-delay: -.3s
+}
+
+.lds-ring div:nth-child(3) {
+    -webkit-animation-delay: -.15s;
+    animation-delay: -.15s
+}
+
+@-webkit-keyframes lds-ring {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes lds-ring {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+.loader {
+    transform: translate(-51%,-84%) scale(1.55);
+    -webkit-transform: translate(-51%,-84%) scale(1.55);
+    -moz-transform: translate(-51%,-55%) scale(1.55);
+    -ms-transform: translate(-51%,-84%) scale(1.55);
+    -o-transform: translate(-51%,-84%) scale(1.55)
+}
+
+.nuxt-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    -webkit-transition: width .2s,opacity .4s;
+    transition: width .2s,opacity .4s;
+    opacity: 1;
+    background-color: #efc14e;
+    z-index: 999999
+}
+
+.mobile .allow {
+    position: relative;
+    top: 32vh;
+}
+
+.mobile .native video {
+    max-height: 200px;
+}
+
+.mobile .lds-ring div {
+    width: 31px;
+    height: 31px;
+}
+
+.mobile .lds-ring {
+    width: 31px;
+}

@@ -1,0 +1,267 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    /*background-color: #000;*/
+    background: #e74c3c
+}
+
+.text {
+    width: 80%;
+    color: #FFF;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.floating {
+    position: absolute;
+    left: 21%;
+    top: 10vh;
+    z-index: 3;
+    width: 150px;
+    height: 150px;
+}
+
+.floating {
+    animation-name: floating;
+    -webkit-animation-name: floating;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(20%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes floating {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+
+    50% {
+        -webkit-transform: translateY(20%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+#blink1 {
+    text-shadow: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    -webkit-animation: blink1 1.5s linear infinite;
+    animation: blink1 1.5s linear infinite;
+}
+
+@-webkit-keyframes blink1 {
+    0% {
+        color: rgba(101, 204, 135, 1);
+    }
+
+    50% {
+        color: rgba(101, 204, 135, 0);
+    }
+
+    100% {
+        color: rgba(101, 204, 135, 1);
+    }
+}
+
+@keyframes blink1 {
+    0% {
+        color: rgba(101, 204, 135, 1);
+    }
+
+    50% {
+        color: rgba(101, 204, 135, 0);
+    }
+
+    100% {
+        color: rgba(101, 204, 135, 1);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text {
+        font-size: 30px;
+        top: 10%;
+        left: 10%;
+        max-width: 95%;
+        display: block;
+    }
+
+    .floating {
+        width: 100px;
+        height: 100px;
+        left: 55%;
+        top: 65%;
+    } 
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://carbamylife.info/media/landings/connection/fonts/Raleway.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.arrow, .text {
+    text-align: center
+}
+
+html {
+    font-family: sans-serif
+}
+
+.text2, .texts {
+    color: #fff;
+    font-family: Raleway, sans-serif
+}
+
+.main {
+    width: 700px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.main img {
+    width: 20%;
+    display: block;
+    margin: 0 auto
+}
+
+.text {
+    font-size: 30px;
+    width: 700px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px
+}
+
+.arrow {
+    width: 200px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-weight: 400;
+    -webkit-animation: floating 1.9s infinite ease-in-out;
+    animation: floating 1.9s infinite ease-in-out;
+    z-index: 1;
+    position: fixed;
+    margin-left: 17%;
+    margin-top: 7%;
+    padding: 20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: #fff;
+}
+
+.texts {
+    font-size: 40px
+}
+
+@media screen and (max-width: 425px) {
+    .arrow, .main {
+        width: 100%;
+    }
+
+    .arrow {
+        margin: 0 auto;
+        bottom: 15%;
+        text-align: center;
+        position: fixed;
+    }
+
+    .text {
+        width: 80%;
+        height: 60%;
+        padding-top: 0
+    }
+
+    .texts {
+        font-size: 18px;
+        color: #fff;
+        font-family: Raleway, sans-serif
+    }
+    .yandex .arrow {
+    right: auto;
+    }
+}
+
+.text2 {
+    font-size: 14px
+}
+
+@media (min-width: 426px) and (max-width: 940px) {
+    .arrow, .main {
+        width: 100%;
+    }
+
+    .arrow {
+        margin: 0 auto;
+        bottom: 15%;
+        text-align: center;
+        position: fixed;
+    }
+
+    .main img {
+        float: left;
+        width: 30%
+    }
+
+    .text {
+        font-size: 30px;
+        width: 80%;
+        height: 60%;
+        padding-top: 0
+    }
+
+    .texts {
+        font-size: 14px;
+        color: #fff;
+        font-family: Raleway, sans-serif
+    }
+
+    .text2 {
+        font-size: 12px;
+        color: #fff
+    }
+
+    .yandex .arrow {
+    right: auto;
+    }
+}
+
+
+.yandex .arrow {
+    right: 17%;
+}
+
+.mobile .container {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile .arrow {
+    bottom: 15%;
+    margin: 0;
+    width: 80%;
+    font-size: 6vw;
+}

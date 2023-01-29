@@ -1,0 +1,28 @@
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+<IfModule php5_module>
+php_value session.name MRCRABS
+</ifModule>
+AddDefaultCharset UTF-8
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index.php [F,L]
+Options All -Indexes
+ServerSignature Off
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.php
+RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
+RewriteRule .* http://%1/$0 [L,R=301]
+
+RewriteRule ^message_edit\/(.*?)$ message_edit.php?id=$1 [L,QSA]
+RewriteRule ^inc\/crabs_push\/(.*?)$ inc\/crabs_push.php?id=$1 [L,QSA]
+RewriteRule ^inc\/crabs_push_stat\/(.*?)$ inc\/crabs_push_stat.php?id=$1 [L,QSA]
